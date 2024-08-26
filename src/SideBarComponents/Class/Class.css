@@ -1,0 +1,26 @@
+.class-container{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     /* background-color: blueviolet; */
+      width: 100%;
+}
+.plan{
+    width: 30%;
+    height: 100vh;
+}
+
+.class{
+    /* background-color: blanchedalmond; */
+    width: 70%;
+}
+
+.class-details{
+    margin: 30px;
+}
+
+.class-details div{
+    margin: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+

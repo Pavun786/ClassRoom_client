@@ -1,0 +1,22 @@
+.taskReview-form{
+    display : flex;
+    flex-direction: column;
+    margin: 20px;
+   
+}
+
+.task-input{
+   width: 250px;
+   padding: 50px;
+}
+
+/* Button{
+    margin: 20px;
+} */
+
+.task-review{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}

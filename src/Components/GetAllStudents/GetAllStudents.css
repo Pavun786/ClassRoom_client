@@ -1,0 +1,21 @@
+
+.student-container{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+ 
+  gap: 50px;
+  width: 100%;
+  height: 100vh;
+  
+}
+
+.studentListImage{
+   
+   height: 100px;
+}
+
+.student-container:nth-child(2){
+  /* padding: 100px; */
+}

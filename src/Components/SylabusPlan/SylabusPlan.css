@@ -1,0 +1,16 @@
+.sylabus-plan{
+    /* background-color:blue; */
+    /* height: 100vh; */
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.day-plan{
+    border: 1px solid black;
+    padding: 15px;
+    margin: 20px;
+    background-color:rgb(192, 198, 204);
+    border-radius: 10px;
+}
