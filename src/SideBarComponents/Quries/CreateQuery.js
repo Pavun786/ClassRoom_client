@@ -5,11 +5,10 @@ import { useState } from "react";
 import { useNavigate,useParams } from "react-router-dom";
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
-
 import Select from '@mui/material/Select';
 import "../Quries/Quries.css"
 import { useEffect } from "react";
-
+import queryImage from "../../assets/queryCreate.png"
 
 function CreateQuery() {
 
@@ -65,6 +64,8 @@ function CreateQuery() {
 
    
   return (
+      <div className="addQuery-container" >
+        <img src={queryImage} className="addQuery-img"/>
         <form className="addQuery-form" onSubmit={formik.handleSubmit}>
             <TextField
                 id="standard-basic"
@@ -129,6 +130,7 @@ function CreateQuery() {
         </Select>
             <Button  variant="dark" style={{ backgroundColor: 'black', color: 'white' }} type="submit"> create-Query</Button>
          </form>
+         </div>
     )
 }
 export default CreateQuery;

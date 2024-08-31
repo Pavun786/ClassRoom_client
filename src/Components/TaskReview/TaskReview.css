@@ -16,7 +16,16 @@
 
 .task-review{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    flex-wrap: wrap;
     align-items: center;
     gap:30px;
+    padding-left: 30px;
+}
+
+@media screen and (max-width : 450px) {
+   
+    .task-review{
+        padding: 10px;
+    }
 }

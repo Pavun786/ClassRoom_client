@@ -1,6 +1,6 @@
 .sylabus-plan{
-    /* background-color:blue; */
-    /* height: 100vh; */
+    /* background-color:blueviolet; */
+    height: 100vh;
     display : flex;
     flex-direction: column;
     justify-content: center;
@@ -8,9 +8,27 @@
 }
 
 .day-plan{
-    border: 1px solid black;
-    padding: 15px;
+    border: 1px solid midnightblue;
+    padding: 0 30px;
     margin: 20px;
-    background-color:rgb(192, 198, 204);
+    background-color:midnightblue;
+    color: whitesmoke;
     border-radius: 10px;
+    cursor: pointer;
+}
+
+.day-plan:hover{
+   background-color: black;
+}
+
+@media screen and (max-width:1065px) {
+    .sylabus-plan{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        width: 100%;
+        height:auto;
+       
+    }
+
 }

@@ -91,14 +91,23 @@ import GetLatestQuery from "./GetLatestQuery";
 
      console.log(queries)
      return(
-        <div>
+        <div className="query-main">
          <h3>Quries</h3>
         { role == 2 ? <Button onClick={()=>navigate(`/side-bar/${id}/query-create`)}>create-Query</Button> : null} 
          <div className="query-container">
-         <div>
+         <div className="query-list">
             { queries && queries.map((ele,index)=>{
                 return(
-                    <DemoPaper key={index} >
+                    // <DemoPaper key={index} >
+                    //     <div className="query-detail">
+                    //     <div>QN-{index+1}-{ele.queryTitle}</div>
+                    //     <div className="quer-status">{ele.status}</div>
+                    //     </div>
+                    //     <div className="category">{ele.category}</div>
+                    //     {role == 2 || role == 3 ? <Button onClick={()=>navigate(`/side-bar/${id}/query?queryId=${ele._id}`)}>View</Button>: null}
+                    //     {role == 3 ? <Button onClick={()=>takeQuery(ele._id ,ele.createdBy)} >Take the query</Button>: null}
+                    // </DemoPaper>
+                    <div >
                         <div className="query-detail">
                         <div>QN-{index+1}-{ele.queryTitle}</div>
                         <div className="quer-status">{ele.status}</div>
@@ -106,7 +115,8 @@ import GetLatestQuery from "./GetLatestQuery";
                         <div className="category">{ele.category}</div>
                         {role == 2 || role == 3 ? <Button onClick={()=>navigate(`/side-bar/${id}/query?queryId=${ele._id}`)}>View</Button>: null}
                         {role == 3 ? <Button onClick={()=>takeQuery(ele._id ,ele.createdBy)} >Take the query</Button>: null}
-                    </DemoPaper>
+                   
+                    </div>
                 )
             }) }
          </div>

@@ -91,23 +91,26 @@ function Course({details}){
         title="green iguana"
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom variant="h6" component="div">
         Course :{details.CourseName} 
         </Typography>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom variant="h6" component="div">
         Duration :{details.Duration} 
         </Typography>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom variant="h6" component="div">
         Price :{details.Amount} 
         </Typography>
       </CardContent>
+      <Button onClick={()=>navigate(`/view/${details._id}`)} size="small">View</Button>
       { role == 1 ? <CardActions>
-        <Button onClick={()=>navigate(`/view/${details._id}`)} size="small">View</Button>
+        {/* <Button onClick={()=>navigate(`/view/${details._id}`)} size="small">View</Button> */}
         <Button onClick={()=>navigate(`/edit-course/${details._id}`)} size="small">Edit</Button>
         <Button size="small">Delete</Button>
       </CardActions> : null}
       {  role == 1 ?  <Button onClick={()=>navigate(`/add-sylabus/${details._id}`)}>Add-Sylabus +</Button> : null}
-      
+      <div>
+      {/* <Button onClick={()=>navigate("/view/:id")}>View-Details</Button> */}
+      </div>
      { role == 2 ?  <Button variant="contained" onClick={()=> requestEvent(`${details._id}`)} endIcon={<SendIcon />}>To Access</Button> : null}
 
     

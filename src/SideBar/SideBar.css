@@ -1,20 +1,94 @@
 .side-bar{
 
     display: flex;
+  
 }
 
 .side-bar ul {
     list-style: none;
     display: flex;
     flex-direction: column;
-    background-color:rgb(177, 183, 188);
+    background-color:lavender;
     justify-content:flex-start;
-    gap :60px;
-    padding: 20px;
-    height: 100vh;
-    width: 20vb;
+    gap :50px;
+    padding: 45px;
+    height: 100%;
+    /* width: 100%; */
     text-decoration: none;
 }
+
+/* .sidebar-container{
+    width: 40%;
+    height:100%;
+}  */
+
 .outlet{
+    
     width: 100%;
+    height:100%;
 }
+
+.custom-link {
+    color:black; 
+    text-decoration: none; 
+}
+
+.custom-link:hover {
+    color:red;
+}
+
+
+
+/* .outlet{
+    width: 100%;
+    background-color: aqua;
+} */
+
+.open-btn{
+    display: none;
+}
+
+
+
+
+
+@media screen and (max-width : 780px) {
+    .sidebar-container{
+        display: none;
+    }
+
+    .open-btn{
+        display: block;
+    }
+
+    .sideopening ul{
+        transform: translateX(0);
+        position: absolute; 
+        left: 0;
+        z-index: 1000;
+        background-color:midnightblue;
+      
+        width: 40%;
+        
+    }
+
+    .custom-link {
+        color:whitesmoke; 
+        text-decoration: none; 
+    }
+    
+    .custom-link:hover {
+        color:red; /* Optional: change color on hover */
+    }
+
+    
+}
+
+@media screen and (max-width:500px){
+    .outlet{
+       
+        width: 100%;
+        /* height: 100vh; */
+    }
+}
+

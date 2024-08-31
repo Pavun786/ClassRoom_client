@@ -8,10 +8,10 @@ import "../SingleTask/SingleTask.css"
  function SingleTask(){
 
 const DemoPaper = styled(Paper)(({ theme }) => ({
-  width: 600,
-  height: 480,
-  margin :15,
-  padding: theme.spacing(2),
+  // width: 650,
+  // height: 550,
+  margin :10,
+  padding: theme.spacing(1),
   ...theme.typography.body2,
 //   textAlign: 'center',
 }));
@@ -68,8 +68,8 @@ const DemoPaper = styled(Paper)(({ theme }) => ({
                         )
                     })}
 
-                <p className='task'>sourceLink :<a href={ele.sourceLink} target='blank'>{ele.sourceLink}</a></p>
-                <p className='task'>deployedLink :<a href={ele.deployedLink} target='blank'>{ele.deployedLink}</a> </p>
+                <div className='task'>sourceLink :<a href={ele.sourceLink} target='blank'>{ele.sourceLink}</a></div>
+                <div className='task'>deployedLink :<a href={ele.deployedLink} target='blank'>{ele.deployedLink}</a> </div>
                     </DemoPaper>
              )
           })}

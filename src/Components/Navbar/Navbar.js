@@ -24,7 +24,7 @@ function Navbar (){
     return(
         <nav>
          <div className="logo">
-          Zenclass
+          ClassRoom.com
          </div>
          { role == 1 ? (<ul className={show ? "showMenu" : ""}>
             <li><Link to="/list">All-Courses</Link></li>
@@ -34,12 +34,13 @@ function Navbar (){
             
              <li><Link to="/all-req">Course Allocation</Link></li>
          </ul>) : <ul> 
-         <li>{role ? <button onClick={logoutFunction}>Logout</button> : "Login" }</li>
+         {/* <li><Link to="/list">All-Courses</Link></li> */}
         
          </ul> }
         
-        
+         {role ? <button onClick={logoutFunction}>Logout</button> : "Login" }
          <div className="amber" onClick={()=>handleChage()}>
+        
             <MenuIcon/>
          </div>
         </nav>

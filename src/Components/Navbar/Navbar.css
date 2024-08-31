@@ -3,7 +3,7 @@
 }
 
 nav{
-    background-color:rgb(86, 100, 86);
+    background-color:midnightblue;
     color: white;
     display: flex;
     padding: 20px;
@@ -44,7 +44,7 @@ ul li{
  border-bottom: 1px solid black;
 }
 
-@media all and (max-width : 500px){
+@media all and (max-width : 580px){
 
     nav{
         flex-direction: column;

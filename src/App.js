@@ -22,6 +22,7 @@ import GetSingleQuery from './SideBarComponents/Quries/GetSingleQuery';
 import ProtectRoute from './ProtectRoute';
 import GetAllStudents from './Components/GetAllStudents/GetAllStudents';
 import GetAllMentors from './Components/GetAllMentors/GetAllMentors';
+import CourseDetails from './Components/CourseDetails/CourseDetails';
 
 function App() {
   return (
@@ -46,6 +47,9 @@ function App() {
             <AddCourse />
           </ProtectRoute>
         } />
+
+       {/* <Route path='/course-detail/:id' element={<CourseDetails/>}/> */}
+
         <Route path='/add-sylabus/:id' element={
           <ProtectRoute>
             <AddSylabus />

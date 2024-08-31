@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Course from "../Course/Course";
 import "../CourseList/CourseList.css"
+import Banner from "../Banner";
 
 
  function CourseList(){
@@ -23,9 +24,20 @@ import "../CourseList/CourseList.css"
     console.log(allCourses)
     return(
         <>
-        <h4>CourseList</h4>
+        <Banner/> 
         <div className="courseList-container">
-        {allCourses.map((ele)=>( <Course details={ele}/>))}
+        <div className="courseList-sub">
+        <h3>ClassRoom</h3> 
+        <div className="courseList-intro">CLASSROOM is one of the industry's leading Project Based Career Programs offered by Google that promises Placement Guidance on completing the course.</div>   
+        </div>  
+        <div className="courseList-card">
+        {allCourses.map((ele)=>( 
+           
+           <Course details={ele}/>
+         
+           ))}
+        </div>  
+       
         </div>
         </>
     )
